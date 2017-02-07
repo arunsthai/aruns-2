@@ -3054,9 +3054,9 @@ footer section.share ul li a i {
 }
 @media only screen and (min-width: 1025px) {
   footer section.share ul li a:hover {
-    -webkit-transform: scale(1.6, );
-    -ms-transform: scale(1.6, );
-    transform: scale(1.6, );
+    -webkit-transform: scale(1.6, 0);
+    -ms-transform: scale(1.6, 0);
+    transform: scale(1.6, 0);
   }
 }
 footer h4,
