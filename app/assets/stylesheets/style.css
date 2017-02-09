@@ -3819,3 +3819,11 @@ main .overlay {
 .overlay-alt {
   background-color: rgba(108, 155, 174, 0.5);
 }
+
+section.form-inline{
+  text-align: center;
+}
+
+iframe{
+  width:auto;
+}

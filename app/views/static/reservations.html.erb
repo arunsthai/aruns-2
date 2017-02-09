@@ -67,51 +67,9 @@
                     <section class="form-inline">
                         <header>
                             <h2>Book a table</h2>
-                            <h4 class="serif">Leave your info and we'll get back to you</h4>
+                            <!-- <h4 class="serif">Leave your info and we'll get back to you</h4> -->
                         </header>
-
-                        <form class="form ambiance-html-form" action="./php/reservations.php" method="post" id="reservation-form">
-                            <div class="row">
-                                <div class="form-group">
-                                    <input name="name" id="name" type="text" placeholder="name">
-                                    <i class="icon icon-User"></i>
-                                </div>
-                                <div class="form-group">
-                                    <input class="full-border" name="email" id="email" type="email" placeholder="email">
-                                    <i class="icon icon-Email"></i>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <input name="phone" id="phone" type="text" placeholder="phone">
-                                    <i class="icon icon-Phone"></i>
-                                </div>
-                                <div class="form-group">
-                                    <input name="seats" id="seats" type="text" placeholder="seats">
-                                    <i class="icon icon-Users"></i>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <input name="date" id="date" type="text" placeholder="date">
-                                    <i class="icon icon-Calendar"></i>
-                                </div>
-                                <div class="form-group">
-                                    <input name="time" id="time" type="text" placeholder="time">
-                                    <i class="icon icon-Clock"></i>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="4" name="requests" id="requests" placeholder="message"></textarea>
-                                <i class="icon icon-Typing"></i>
-                            </div>
-                            <span class="message"><strong>Status.</strong> idle</span>
-                            <div class="submit">
-                                <button type="submit" value="submit">
-                            <i class="icon icon-Forward"></i>
-                        </button>
-                            </div>
-                        </form>
+                        <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=70114&domain=com&type=standard&theme=tall&lang=en&overlay=false&iframe=true'></script>
                     </section>
                 </section>
             </div>
@@ -129,46 +87,31 @@
         <!-- end of main content -->
     </div>
 
-    <!-- The slideshow -->
+        <!-- The slideshow -->
     <ul id="slideshow" data-speed="6000">
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('dumpling.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('crab-cake.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('stripe-bass.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('aruns-coconut-noodles.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('sorbet.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('beef-curry.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('k-thong.jpg') %>
         </li>
         <li>
-            <%= image_tag('demo.jpg') %>
-        </li>
-        <li>
-            <%= image_tag('demo.jpg') %>
-        </li>
-        <li>
-            <%= image_tag('demo.jpg') %>
-        </li>
-        <li>
-            <%= image_tag('demo.jpg') %>
-        </li>
-        <li>
-            <%= image_tag('demo.jpg') %>
-        </li>
-        <li>
-            <%= image_tag('demo.jpg') %>
+            <%= image_tag('lad-nar.jpg') %>
         </li>
     </ul>
     <!-- end of slideshow -->
