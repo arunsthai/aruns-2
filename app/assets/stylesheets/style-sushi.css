@@ -112,7 +112,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 300;
 }
 dfn {
   font-style: italic;
@@ -266,7 +266,7 @@ textarea {
 }
 /* 1.29: Don't inherit the `font-weight` (applied by a rule above). */
 optgroup {
-  font-weight: bold;
+  font-weight: 300;
 }
 /* 1.30: Remove most spacing between table cells. */
 table {

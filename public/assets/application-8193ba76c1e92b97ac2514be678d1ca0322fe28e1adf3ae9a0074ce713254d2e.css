@@ -113,7 +113,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 300;
 }
 dfn {
   font-style: italic;
@@ -267,7 +267,7 @@ textarea {
 }
 /* 1.29: Don't inherit the `font-weight` (applied by a rule above). */
 optgroup {
-  font-weight: bold;
+  font-weight: 300;
 }
 /* 1.30: Remove most spacing between table cells. */
 table {
@@ -394,7 +394,7 @@ p {
 /* 2.4: General header styling */
 h1 {
   font-size: 38px;
-  font-size: 3.8rem;
+  font-size: 4.8rem;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
   font-weight: 700;
 }
@@ -422,7 +422,7 @@ h6 {
 p,
 span {
   font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 2.7rem;
 }
 /* 2.5: Style anchors in lists and paragraphs */
 p a,
@@ -489,7 +489,7 @@ blockquote p {
 /* 2.10: Styling for badges (element with background) and rounded corners */
 .badge {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 4.4rem;
   letter-spacing: 1px;
   display: inline-block;
   padding: .6em 1em;
@@ -668,6 +668,24 @@ blockquote p {
   font-family: '77-Essential-Icons';
   src: url('icons/77-Essential-Icons.eot');
   src: url('icons/77-Essential-Icons.eot?#iefix') format("embedded-opentype"), url('icons/77-Essential-Icons.woff') format('woff'), url('icons/77-Essential-Icons.ttf') format('truetype'), url('icons/77-Essential-Icons.svg#77-Essential-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* --------------------------------------------
+
+4.2.1: Icon definitions & styling for easy use
+
+----------------------------------------------- */
+
+/* --------------------------------------------
+
+4.3: Fonts inclusion (line-icon font) / 77-Essential-icons fontface
+
+----------------------------------------------- */
+@font-face {
+  font-family: 'snell-roundhand';
+  src: url('snell-roundhand.eot');
+  src: url('snell-roundhand.eot?#iefix') format("embedded-opentype"), url('snell-roundhand.woff') format('woff'), url('snell-roundhand.ttf') format('truetype'), url('snell-roundhand.svg#snell-roundhand') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2300,7 +2318,7 @@ html {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   background-color: #000000;
-  font: normal 62.5%/1em 'montserratregular', sans-serif;
+  font: normal 62.5%/1em 'snell-roundhand', sans-serif;
   height: 100%;
   color: #FFFFFF;
   overflow: hidden;
@@ -2686,6 +2704,7 @@ figure figcaption i {
   height: 100%;
   color: #FFFFFF;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.36);
 }
 .strokes ul li a section {
   -webkit-transform: translateY(-50%);
@@ -2696,13 +2715,14 @@ figure figcaption i {
 }
 .strokes ul li a section h1 {
   font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 9.4rem;
   letter-spacing: 0;
 }
 .strokes ul li a section h5 {
   font-family: 'merriweather-italic', serif;
   line-height: 1em;
   margin-bottom: .1em;
+  font-size: 0rem;
 }
 .strokes ul li a section * {
   margin-top: 0;
@@ -2724,7 +2744,7 @@ figure figcaption i {
 }
 .strokes ul li a footer p {
   font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   margin: 0;
   text-align: center;
 }
@@ -2766,7 +2786,7 @@ figure figcaption i {
   }
   .strokes ul li a section h1 {
     font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 4.8rem;
     opacity: 1;
   }
   .strokes ul li a footer {
@@ -3009,7 +3029,7 @@ footer .author span.author {
 }
 footer .author span.date {
   font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
 }
 footer section {
   /* 12.1: The share area of the footer */
@@ -3091,7 +3111,7 @@ footer h3 {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   .content {
-    max-width: 650px;
+    max-width: 800px;
     margin: auto;
   }
 }
@@ -3425,7 +3445,7 @@ ul.price-list li .top {
 }
 ul.price-list li .top .title {
   font-size: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 35px;
   color: #FFFFFF;
   margin: 0;
@@ -3460,8 +3480,8 @@ ul.price-list li .top .price {
 }
 ul.price-list li .description {
   font-size: 13px;
-  font-size: 1.3rem;
-  font-family: 'merriweather-italic', serif;
+  font-size: 2.3rem;
+  font-family: 'snell-roundhand', serif;
   text-align: left;
   color: #FFFFFF;
   font-weight: 700;
@@ -3470,7 +3490,7 @@ ul.price-list li .description {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   ul.price-list li .description {
     font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
   }
 }
 /* 14.5: Styling for the hours / time list. */
@@ -3734,11 +3754,11 @@ main .overlay {
   color: #FFFFFF;
 }
 .notice h3 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 5px;
+    font-size: 18px;
+    font-size: 2.8rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    margin-top: 5px;
 }
 .notice p {
   opacity: .6;
@@ -3825,6 +3845,15 @@ main .overlay {
       font-size: 9.4rem;
       letter-spacing: 0;
   }
+}
+
+#ot-widget-container2{
+    margin-top: 10em;
+    text-align:center;
+}
+
+section.content{
+  text-align: center;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
