@@ -30,6 +30,7 @@ L'ambiance
 
 ----------------------------------------------- */
 /* 1.1: A mixin to apply box-sizing border box to any element */
+
 .bb {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -432,7 +433,7 @@ ol a {
 /* 2.6: Basic anchor styling and transitions */
 a {
   text-decoration: none;
-  color: #6C859E;
+  color: #e53824;
 }
 @media only screen and (min-width: 1025px) {
   a {
@@ -440,14 +441,14 @@ a {
     transition: color 1s;
   }
   a:hover {
-    color: #000000;
+    color: #FFFFFF;
   }
 }
 /* 2.7: Serif helper class */
 .serif {
   letter-spacing: 1px;
   font-family: 'merriweather-italic', serif;
-  color: #6C859E;
+  color: #e53824;
 }
 /* 2.8: Styling for the signature shown in the footer */
 .signature {
@@ -456,7 +457,7 @@ a {
 }
 .signature h6 {
   text-transform: uppercase;
-  color: #6C859E;
+  color: #e53824;
   letter-spacing: 2px;
   margin: 0;
 }
@@ -471,7 +472,7 @@ a {
 }
 /* 2.9: Blockquote styling */
 blockquote {
-  border-left: 2px solid #6C859E;
+  border-left: 2px solid #e53824;
   margin: 40px 0 40px 30px;
   padding-left: 10px;
   line-height: 1.8;
@@ -479,7 +480,7 @@ blockquote {
 blockquote p {
   font-size: 28px;
   font-size: 2.8rem;
-  color: #6C859E;
+  color: #e53824;
   font-family: 'merriweather-italic', serif;
   letter-spacing: 1px;
   opacity: 1;
@@ -494,14 +495,14 @@ blockquote p {
   padding: .6em 1em;
   border-radius: 1em;
   line-height: 1.1em;
-  background-color: rgba(108, 133, 158, 0.7);
+  background-color: rgba(229, 56, 36, 0.8);
   color: #FFFFFF;
   margin: 10px 0;
 }
 .badge-rounded {
   display: inline-block;
   padding: .6em .9em;
-  background: rgba(108, 133, 158, 0.7);
+  background: rgba(229, 56, 36, 0.8);
   border-radius: 1em;
 }
 /* 2.11: Styling for the icon show with the date */
@@ -684,7 +685,7 @@ blockquote p {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #6C859E;
+  background-color: #e53824;
 }
 .icon.bg:before {
   line-height: 60px;
@@ -694,7 +695,7 @@ blockquote p {
   background-color: #FFFFFF;
 }
 .icon.inverted:before {
-  color: #6C859E;
+  color: #e53824;
 }
 .icon:before {
   font-size: 32px;
@@ -1007,7 +1008,7 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #000000;
+  color: #FFFFFF;
 }
 .icon-social.aim:before {
   content: '\e800';
@@ -2090,8 +2091,8 @@ html.remodal-is-locked {
   width: 100%;
   margin-bottom: 10px;
   padding: 70px 70px 50px 70px;
-  color: #2b2e38;
-  background: #000000;
+  color: #373a44;
+  background: #FFFFFF;
   /* Close button */
 }
 .remodal.remodal-is-opening,
@@ -2116,7 +2117,7 @@ html.remodal-is-locked {
   position: absolute;
   top: 0;
   left: 50%;
-  color: #000000;
+  color: #FFFFFF;
 }
 .remodal h1 {
   font-size: 28px;
@@ -2173,7 +2174,7 @@ html.remodal-is-locked {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\78";
-  color: #6C859E;
+  color: #e53824;
   line-height: 35px;
   position: absolute;
   top: 0;
@@ -2285,23 +2286,23 @@ html.remodal-is-locked {
 
 ----------------------------------------------- */
 ::selection {
-  background: #6C859E;
-  color: #000000;
+  background: #e53824;
+  color: #FFFFFF;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: #6C859E;
-  color: #000000;
+  background: #e53824;
+  color: #FFFFFF;
   text-shadow: none;
 }
 /* 7.1: Define the html element and rules */
 html {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background-color: #FFFFFF;
+  background-color: #000000;
   font: normal 62.5%/1em 'montserratregular', sans-serif;
   height: 100%;
-  color: #000000;
+  color: #FFFFFF;
   overflow: hidden;
   line-height: 1.7;
 }
@@ -2337,17 +2338,17 @@ body main {
 8.1: Define placeholder color
 */
 :-moz-placeholder {
-  color: rgba(108, 133, 158, 0.7);
+  color: rgba(255, 255, 255, 0.5);
 }
 ::-moz-placeholder {
-  color: rgba(108, 133, 158, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 :-ms-input-placeholder {
-  color: rgba(108, 133, 158, 0.7);
+  color: rgba(255, 255, 255, 0.5);
 }
 ::-webkit-input-placeholder {
-  color: rgba(108, 133, 158, 0.7);
+  color: rgba(255, 255, 255, 0.5);
 }
 /* 8.2: Define form class and elements belonging to .form */
 .form {
@@ -2371,7 +2372,7 @@ body main {
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #6C859E;
+  color: #e53824;
   text-transform: uppercase;
   margin-top: 8px;
   display: block;
@@ -2435,8 +2436,8 @@ input[type="color"] {
   width: 100%;
   border: none;
   background: none;
-  color: #000000;
-  border: 2px solid #000000;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
   -webkit-appearance: none;
   margin: 10px 0;
 }
@@ -2478,7 +2479,7 @@ input[type="color"]:focus {
   transition: color 0.4s;
   font-size: 24px;
   font-size: 2.4rem;
-  color: #000000;
+  color: #FFFFFF;
 }
 /* 8.6: Textarea styling */
 textarea {
@@ -2497,7 +2498,7 @@ textarea {
   display: inline-block;
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #6C859E;
+  border: 2px solid #e53824;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -2518,10 +2519,10 @@ textarea {
     transition: background-color 0.3s;
   }
   .submit button:hover {
-    background-color: #6C859E;
+    background-color: #e53824;
   }
   .submit button:hover i:before {
-    color: #000000;
+    color: #FFFFFF;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -2531,13 +2532,13 @@ textarea {
   }
 }
 .submit i:before {
-  color: #6C859E;
+  color: #e53824;
   position: relative;
   z-index: 0;
 }
 /* 8.8: Styling of the button class (.btn) */
 .btn {
-  color: #6C859E;
+  color: #e53824;
   border: 2px solid transparent;
   display: inline-block;
   border-radius: 1.4em;
@@ -2554,14 +2555,14 @@ textarea {
   text-transform: uppercase;
 }
 .btn.active {
-  border-color: #000000;
+  border-color: #FFFFFF;
 }
 .btn.active * {
-  color: #000000;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 1025px) {
   .btn:hover {
-    color: #000000;
+    color: #FFFFFF;
   }
 }
 /* --------------------------------------------
@@ -2597,7 +2598,7 @@ figure figcaption {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 30px;
   text-align: left;
-  color: #000000;
+  color: #FFFFFF;
   overflow: hidden;
 }
 figure figcaption h3 {
@@ -2609,7 +2610,7 @@ figure figcaption h3 {
 }
 figure figcaption p {
   margin: 0;
-  color: #6C859E;
+  color: #e53824;
 }
 figure figcaption i {
   display: none;
@@ -2777,7 +2778,7 @@ figure figcaption i {
     display: block;
   }
   .strokes ul li a footer h5 {
-    color: #6C859E;
+    color: #e53824;
     letter-spacing: 0;
   }
   .strokes ul li a footer .icon {
@@ -2791,8 +2792,8 @@ figure figcaption i {
     font-size: 4rem;
   }
   .strokes ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
   }
   .strokes ul li a:hover section * {
     opacity: 1;
@@ -2961,7 +2962,7 @@ header.detail section h1 {
 }
 /* 11.2: Always show logo (also on mobile devices) */
 .always-show-logo header {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
   height: 10%;
 }
 .always-show-logo header .logo {
@@ -3021,7 +3022,7 @@ footer section.share h5 {
   margin: 0;
   line-height: 2;
   vertical-align: middle;
-  color: #6C859E;
+  color: #e53824;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -3061,7 +3062,7 @@ footer section.share ul li a i {
 }
 footer h4,
 footer h3 {
-  color: #6C859E;
+  color: #e53824;
 }
 /* --------------------------------------------
 
@@ -3069,7 +3070,7 @@ footer h3 {
 
 ----------------------------------------------- */
 .content-wrap {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: 55vh;
 }
 /* 13.1: Styling for the content area and the top icon */
@@ -3130,11 +3131,11 @@ footer h3 {
   transition: background-color 0.3s;
 }
 .content header.with-subnav ul li:hover {
-  border-color: #6C859E;
-  background-color: #6C859E;
+  border-color: #e53824;
+  background-color: #e53824;
 }
 .content header.with-subnav ul li:hover * {
-  color: #000000;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 768px) and (max-width: 1024px) {
   .content header.with-subnav ul {
@@ -3170,7 +3171,7 @@ ol {
   text-align: left;
   padding-left: 25px;
   margin: 20px 0;
-  color: #6C859E;
+  color: #e53824;
 }
 ul li,
 ol li {
@@ -3179,7 +3180,7 @@ ol li {
 }
 ul li h4,
 ol li h4 {
-  color: #6C859E;
+  color: #e53824;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -3195,14 +3196,14 @@ ul.link-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #000000;
 }
 ul.link-list li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   position: relative;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #111111;
 }
 ul.link-list li a {
   -webkit-box-sizing: border-box;
@@ -3219,7 +3220,7 @@ ul.link-list li a h3 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000000;
+  color: #FFFFFF;
 }
 ul.link-list li a ul {
   list-style: none;
@@ -3240,7 +3241,7 @@ ul.link-list li a ul li i {
 ul.link-list li a ul li i:before {
   font-size: 18px;
   font-size: 1.8rem;
-  color: #000000;
+  color: #FFFFFF;
 }
 ul.link-list li a ul li p {
   font-size: 14px;
@@ -3260,7 +3261,7 @@ ul.link-list li .next {
   height: 2.5em;
 }
 ul.link-list li .next:before {
-  color: #000000;
+  color: #FFFFFF;
 }
 @media only screen and (max-width: 667px) {
   ul.link-list li .next {
@@ -3284,14 +3285,14 @@ ul.link-list li .next:before {
     right: 30px;
   }
   ul.link-list li h6:before {
-    color: #000000;
+    color: #FFFFFF;
     margin-right: 5px;
     content: attr(data-label);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   ul.link-list li h6:before {
-    color: #000000;
+    color: #FFFFFF;
     margin-right: 5px;
     content: attr(data-label);
   }
@@ -3304,7 +3305,7 @@ ul.link-list li .next:before {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   ul.link-list li h6:before {
-    color: #000000;
+    color: #FFFFFF;
     margin-right: 5px;
     content: attr(data-label);
   }
@@ -3345,7 +3346,7 @@ ul.link-list li .next:before {
     opacity: .2;
   }
   ul.link-list li a:hover {
-    background-color: rgba(108, 133, 158, 0.7);
+    background-color: rgba(229, 56, 36, 0.8);
   }
   ul.link-list li a:hover .next {
     right: 100px;
@@ -3379,7 +3380,7 @@ ul.icon-list li a i:before {
   font-size: 26px;
   font-size: 2.6rem;
   vertical-align: middle;
-  color: #000000;
+  color: #FFFFFF;
   margin-right: 5px;
 }
 ul.icon-list li a i.icon-social:before {
@@ -3420,13 +3421,13 @@ ul.price-list li {
   margin-bottom: 35px;
 }
 ul.price-list li .top {
-  border-bottom: 1px dashed #6C859E;
+  border-bottom: 1px dashed #e53824;
 }
 ul.price-list li .top .title {
   font-size: 20px;
   font-size: 2rem;
   line-height: 35px;
-  color: #000000;
+  color: #FFFFFF;
   margin: 0;
   display: inline-block;
   /* Truncate string if to long (mobile only */
@@ -3453,7 +3454,7 @@ ul.price-list li .top .title {
 ul.price-list li .top .price {
   font-size: 14px;
   font-size: 1.4rem;
-  color: #000000;
+  color: #FFFFFF;
   float: right;
   margin: 0;
 }
@@ -3462,7 +3463,7 @@ ul.price-list li .description {
   font-size: 1.3rem;
   font-family: 'merriweather-italic', serif;
   text-align: left;
-  color: #000000;
+  color: #FFFFFF;
   font-weight: 700;
   margin: 15px 0;
 }
@@ -3497,7 +3498,7 @@ time strong {
   font-size: 14px;
   font-size: 1.4rem;
   font-family: 'merriweather-italic', serif;
-  color: #6C859E;
+  color: #e53824;
   min-width: 110px;
   margin-right: 10px;
 }
@@ -3618,7 +3619,7 @@ main .overlay {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 /* --------------------------------------------
@@ -3630,7 +3631,7 @@ main .overlay {
   -webkit-transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   z-index: 40;
-  background-color: #FFFFFF;
+  background-color: #000000;
   position: fixed;
   top: 0;
   right: 0;
@@ -3662,7 +3663,7 @@ main .overlay {
 #splash .loader .line {
   width: 0;
   height: 1px;
-  background-color: #6C859E;
+  background-color: #e53824;
   /* 17.2: The splash animation */
   -webkit-animation: fadeInAnimation 2s;
   -moz-animation: fadeInAnimation 2s;
@@ -3713,7 +3714,7 @@ main .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 50px 0 0;
-  background-color: #6C859E;
+  background-color: #e53824;
   border-radius: 5px;
   position: relative;
   text-align: left;
@@ -3755,7 +3756,7 @@ main .overlay {
 }
 /* 18.2: White hepler class */
 .white {
-  color: #000000;
+  color: #FFFFFF;
 }
 /* 18.3: shadow on the top of each page */
 .shadow {
@@ -3775,7 +3776,7 @@ main .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
   text-align: left;
 }
@@ -3802,18 +3803,42 @@ main .overlay {
   -moz-osx-font-smoothing: grayscale;
   font-size: 21px;
   font-size: 2.1rem;
-  color: #6C859E;
+  color: #e53824;
   content: "\6d";
   vertical-align: middle;
   margin-right: 10px;
 }
 /* 18.5: Overlay helper classes */
 .overlay-dark {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .overlay-alt {
-  background-color: rgba(108, 133, 158, 0.7);
+  background-color: rgba(229, 56, 36, 0.8);
 }
+
+@media screen and (max-width: 375px) {
+  .strokes ul li a section h1 {
+      font-size: 24px;
+      font-size: 9.4rem;
+      letter-spacing: 0;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

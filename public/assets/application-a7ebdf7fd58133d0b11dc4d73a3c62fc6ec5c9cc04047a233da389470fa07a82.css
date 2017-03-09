@@ -30,6 +30,7 @@ L'ambiance
 
 ----------------------------------------------- */
 /* 1.1: A mixin to apply box-sizing border box to any element */
+
 .bb {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -432,7 +433,7 @@ ol a {
 /* 2.6: Basic anchor styling and transitions */
 a {
   text-decoration: none;
-  color: #d6197e;
+  color: #e53824;
 }
 @media only screen and (min-width: 1025px) {
   a {
@@ -447,7 +448,7 @@ a {
 .serif {
   letter-spacing: 1px;
   font-family: 'merriweather-italic', serif;
-  color: #d6197e;
+  color: #e53824;
 }
 /* 2.8: Styling for the signature shown in the footer */
 .signature {
@@ -456,7 +457,7 @@ a {
 }
 .signature h6 {
   text-transform: uppercase;
-  color: #d6197e;
+  color: #e53824;
   letter-spacing: 2px;
   margin: 0;
 }
@@ -471,7 +472,7 @@ a {
 }
 /* 2.9: Blockquote styling */
 blockquote {
-  border-left: 2px solid #d6197e;
+  border-left: 2px solid #e53824;
   margin: 40px 0 40px 30px;
   padding-left: 10px;
   line-height: 1.8;
@@ -479,7 +480,7 @@ blockquote {
 blockquote p {
   font-size: 28px;
   font-size: 2.8rem;
-  color: #d6197e;
+  color: #e53824;
   font-family: 'merriweather-italic', serif;
   letter-spacing: 1px;
   opacity: 1;
@@ -494,14 +495,14 @@ blockquote p {
   padding: .6em 1em;
   border-radius: 1em;
   line-height: 1.1em;
-  background-color: rgba(214, 25, 126, 0.6);
+  background-color: rgba(229, 56, 36, 0.8);
   color: #FFFFFF;
   margin: 10px 0;
 }
 .badge-rounded {
   display: inline-block;
   padding: .6em .9em;
-  background: rgba(214, 25, 126, 0.6);
+  background: rgba(229, 56, 36, 0.8);
   border-radius: 1em;
 }
 /* 2.11: Styling for the icon show with the date */
@@ -675,6 +676,24 @@ blockquote p {
 4.2.1: Icon definitions & styling for easy use
 
 ----------------------------------------------- */
+
+/* --------------------------------------------
+
+4.3: Fonts inclusion (line-icon font) / 77-Essential-icons fontface
+
+----------------------------------------------- */
+@font-face {
+  font-family: 'snell-roundhand';
+  src: url('icons/snell-roundhand.eot');
+  src: url('icons/snell-roundhand.eot?#iefix') format("embedded-opentype"), url('icons/snell-roundhand.woff') format('woff'), url('icons/snell-roundhand.ttf') format('truetype'), url('icons/snell-roundhand.svg#snell-roundhand') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* --------------------------------------------
+
+4.2.1: Icon definitions & styling for easy use
+
+----------------------------------------------- */
 .icon.bg {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -684,7 +703,7 @@ blockquote p {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #d6197e;
+  background-color: #e53824;
 }
 .icon.bg:before {
   line-height: 60px;
@@ -694,7 +713,7 @@ blockquote p {
   background-color: #FFFFFF;
 }
 .icon.inverted:before {
-  color: #d6197e;
+  color: #e53824;
 }
 .icon:before {
   font-size: 32px;
@@ -973,8 +992,8 @@ blockquote p {
 ----------------------------------------------- */
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/icons/fontello.eot?98850010');
-  src: url('../fonts/icons/fontello.eot?98850010#iefix') format("embedded-opentype"), url('../fonts/icons/fontello.woff?98850010') format('woff'), url('../fonts/icons/fontello.ttf?98850010') format('truetype'), url('../fonts/icons/fontello?98850010#fontello') format('svg');
+  src: url('icons/fontello.eot?98850010');
+  src: url('icons/fontello.eot?98850010#iefix') format("embedded-opentype"), url('icons/fontello.woff?98850010') format('woff'), url('icons/fontello.ttf?98850010') format('truetype'), url('icons/fontello?98850010#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2173,7 +2192,7 @@ html.remodal-is-locked {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\78";
-  color: #d6197e;
+  color: #e53824;
   line-height: 35px;
   position: absolute;
   top: 0;
@@ -2285,12 +2304,12 @@ html.remodal-is-locked {
 
 ----------------------------------------------- */
 ::selection {
-  background: #d6197e;
+  background: #e53824;
   color: #FFFFFF;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: #d6197e;
+  background: #e53824;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -2298,8 +2317,8 @@ html.remodal-is-locked {
 html {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  background-color: rgba(0, 0, 0, 0.95);
-  font: normal 62.5%/1em 'montserratregular', sans-serif;
+  background-color: #000000;
+  font: normal 62.5%/1em 'snell-roundhand', sans-serif;
   height: 100%;
   color: #FFFFFF;
   overflow: hidden;
@@ -2371,7 +2390,7 @@ body main {
   font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #d6197e;
+  color: #e53824;
   text-transform: uppercase;
   margin-top: 8px;
   display: block;
@@ -2497,7 +2516,7 @@ textarea {
   display: inline-block;
   -webkit-appearance: none;
   background-color: transparent;
-  border: 2px solid #d6197e;
+  border: 2px solid #e53824;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -2518,7 +2537,7 @@ textarea {
     transition: background-color 0.3s;
   }
   .submit button:hover {
-    background-color: #d6197e;
+    background-color: #e53824;
   }
   .submit button:hover i:before {
     color: #FFFFFF;
@@ -2531,13 +2550,13 @@ textarea {
   }
 }
 .submit i:before {
-  color: #d6197e;
+  color: #e53824;
   position: relative;
   z-index: 0;
 }
 /* 8.8: Styling of the button class (.btn) */
 .btn {
-  color: #d6197e;
+  color: #e53824;
   border: 2px solid transparent;
   display: inline-block;
   border-radius: 1.4em;
@@ -2609,7 +2628,7 @@ figure figcaption h3 {
 }
 figure figcaption p {
   margin: 0;
-  color: #d6197e;
+  color: #e53824;
 }
 figure figcaption i {
   display: none;
@@ -2685,6 +2704,7 @@ figure figcaption i {
   height: 100%;
   color: #FFFFFF;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.36);
 }
 .strokes ul li a section {
   -webkit-transform: translateY(-50%);
@@ -2695,13 +2715,14 @@ figure figcaption i {
 }
 .strokes ul li a section h1 {
   font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 9.4rem;
   letter-spacing: 0;
 }
 .strokes ul li a section h5 {
   font-family: 'merriweather-italic', serif;
   line-height: 1em;
   margin-bottom: .1em;
+  font-size: 0rem;
 }
 .strokes ul li a section * {
   margin-top: 0;
@@ -2777,7 +2798,7 @@ figure figcaption i {
     display: block;
   }
   .strokes ul li a footer h5 {
-    color: #d6197e;
+    color: #e53824;
     letter-spacing: 0;
   }
   .strokes ul li a footer .icon {
@@ -3021,7 +3042,7 @@ footer section.share h5 {
   margin: 0;
   line-height: 2;
   vertical-align: middle;
-  color: #d6197e;
+  color: #e53824;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -3061,7 +3082,7 @@ footer section.share ul li a i {
 }
 footer h4,
 footer h3 {
-  color: #d6197e;
+  color: #e53824;
 }
 /* --------------------------------------------
 
@@ -3130,8 +3151,8 @@ footer h3 {
   transition: background-color 0.3s;
 }
 .content header.with-subnav ul li:hover {
-  border-color: #d6197e;
-  background-color: #d6197e;
+  border-color: #e53824;
+  background-color: #e53824;
 }
 .content header.with-subnav ul li:hover * {
   color: #FFFFFF;
@@ -3170,7 +3191,7 @@ ol {
   text-align: left;
   padding-left: 25px;
   margin: 20px 0;
-  color: #d6197e;
+  color: #e53824;
 }
 ul li,
 ol li {
@@ -3179,7 +3200,7 @@ ol li {
 }
 ul li h4,
 ol li h4 {
-  color: #d6197e;
+  color: #e53824;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -3195,14 +3216,14 @@ ul.link-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.98);
+  background-color: #000000;
 }
 ul.link-list li {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #111111;
 }
 ul.link-list li a {
   -webkit-box-sizing: border-box;
@@ -3345,7 +3366,7 @@ ul.link-list li .next:before {
     opacity: .2;
   }
   ul.link-list li a:hover {
-    background-color: rgba(214, 25, 126, 0.6);
+    background-color: rgba(229, 56, 36, 0.8);
   }
   ul.link-list li a:hover .next {
     right: 100px;
@@ -3420,7 +3441,7 @@ ul.price-list li {
   margin-bottom: 35px;
 }
 ul.price-list li .top {
-  border-bottom: 1px dashed #d6197e;
+  border-bottom: 1px dashed #e53824;
 }
 ul.price-list li .top .title {
   font-size: 20px;
@@ -3497,7 +3518,7 @@ time strong {
   font-size: 14px;
   font-size: 1.4rem;
   font-family: 'merriweather-italic', serif;
-  color: #d6197e;
+  color: #e53824;
   min-width: 110px;
   margin-right: 10px;
 }
@@ -3630,7 +3651,7 @@ main .overlay {
   -webkit-transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: all 1s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   z-index: 40;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #000000;
   position: fixed;
   top: 0;
   right: 0;
@@ -3662,7 +3683,7 @@ main .overlay {
 #splash .loader .line {
   width: 0;
   height: 1px;
-  background-color: #d6197e;
+  background-color: #e53824;
   /* 17.2: The splash animation */
   -webkit-animation: fadeInAnimation 2s;
   -moz-animation: fadeInAnimation 2s;
@@ -3713,7 +3734,7 @@ main .overlay {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 50px 0 0;
-  background-color: #d6197e;
+  background-color: #e53824;
   border-radius: 5px;
   position: relative;
   text-align: left;
@@ -3802,7 +3823,7 @@ main .overlay {
   -moz-osx-font-smoothing: grayscale;
   font-size: 21px;
   font-size: 2.1rem;
-  color: #d6197e;
+  color: #e53824;
   content: "\6d";
   vertical-align: middle;
   margin-right: 10px;
@@ -3815,5 +3836,38 @@ main .overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .overlay-alt {
-  background-color: rgba(214, 25, 126, 0.6);
+  background-color: rgba(229, 56, 36, 0.8);
 }
+
+@media screen and (max-width: 375px) {
+  .strokes ul li a section h1 {
+      font-size: 24px;
+      font-size: 9.4rem;
+      letter-spacing: 0;
+  }
+}
+
+#ot-widget-container2{
+    margin-top: 10em;
+    text-align:center;
+}
+
+section.content{
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
