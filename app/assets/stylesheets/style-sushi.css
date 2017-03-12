@@ -494,7 +494,7 @@ blockquote p {
   padding: .6em 1em;
   border-radius: 1em;
   line-height: 1.1em;
-  background-color: rgba(229, 56, 36, 0.8);
+  /*background-color: rgba(229, 56, 36, 0.8);*/
   color: #FFFFFF;
   margin: 10px 0;
 }
@@ -2716,6 +2716,7 @@ figure figcaption i {
   font-size: 24px;
   font-size: 9.4rem;
   letter-spacing: 0;
+  color: #FF8E00;
 }
 .strokes ul li a section h5 {
   font-family: 'merriweather-italic', serif;
@@ -2787,6 +2788,7 @@ figure figcaption i {
     font-size: 28px;
     font-size: 4.8rem;
     opacity: 1;
+    color: #FF8E00;
   }
   .strokes ul li a footer {
     -webkit-transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -2811,7 +2813,7 @@ figure figcaption i {
     font-size: 4rem;
   }
   .strokes ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #79110f;
     color: #FFFFFF;
   }
   .strokes ul li a:hover section * {
@@ -2954,7 +2956,8 @@ header.detail {
   height: 45vh;
 }
 header.detail * {
-  color: #FFFFFF;
+  color: #991815;
+  font-weight: bold;
 }
 header.detail section {
   -webkit-transform: translate(-50%, -20%);
@@ -3089,7 +3092,7 @@ footer h3 {
 
 ----------------------------------------------- */
 .content-wrap {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(153, 24, 21, 1);
   min-height: 55vh;
 }
 /* 13.1: Styling for the content area and the top icon */
@@ -3110,7 +3113,7 @@ footer h3 {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   .content {
-    max-width: 800px;
+    max-width: 86%;
     margin: auto;
   }
 }
@@ -3176,8 +3179,16 @@ footer h3 {
 .content section:last-child {
   padding-bottom: 0;
 }
+
+.content section p{
+  padding-top: 50px;
+}
 .content section.info {
   text-align: center;
+}
+
+aside .notice p{
+  padding-top:10px;
 }
 /* --------------------------------------------
 
@@ -3843,11 +3854,12 @@ main .overlay {
       font-size: 24px;
       font-size: 9.4rem;
       letter-spacing: 0;
+      color: #FF8E00;
   }
 }
 
 #ot-widget-container2{
-    margin-top: 10em;
+    margin-top: 0em;
     text-align:center;
 }
 
